@@ -137,6 +137,7 @@ body {
   padding: 10px;
   gap: 10px;
   z-index: 999;
+  box-sizing: border-box;
 }
 
 header {
@@ -289,6 +290,7 @@ header img {
   position: absolute;
   z-index: 101;
   background-color: rgba(230, 230, 250, 0.628);
+  box-sizing: border-box;
 }
 
 .love-letter-bg {
@@ -337,6 +339,7 @@ header img {
 
 #flor-display {
   display: none;
+  box-sizing: border-box;
 }
 
 .flor-container {
@@ -371,6 +374,7 @@ header img {
 
 #music-display {
   display: none;
+  box-sizing: border-box;
 }
 
 .music-container {
