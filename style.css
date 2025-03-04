@@ -6,6 +6,8 @@
 }
 
 body {
+  width: 100%;
+  height: 100%;
   color: #fe899c;
   overflow: hidden;
   background-color: #ffabb9;
@@ -13,29 +15,24 @@ body {
 
 .heart {
   position: absolute;
-  width: 20px;
-  height: 20px;
+  width: 1.25rem;
+  /* 20px / 16 */
+  height: 1.25rem;
+  /* 20px / 16 */
   background-color: #ff4d6d;
-  /* Warna hati */
-  clip-path: path("M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"
-    );
-  /* Bentuk hati */
+  clip-path: path("M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z");
   animation: float 8s linear infinite;
-  /* Animasi mengambang */
   transform-origin: center;
-  /* Pusat rotasi */
 }
 
 @keyframes float {
   0% {
     transform: translateY(100vh);
-    /* Mulai dari bawah */
     opacity: 1;
   }
 
   100% {
     transform: translateY(-10vh);
-    /* Bergerak ke atas */
     opacity: 0;
   }
 }
@@ -53,31 +50,32 @@ body {
   background-color: rgb(255, 179, 192);
   transform: translate(-50%, -50%);
   z-index: 1000;
-  box-sizing: border-box;
 }
 
 .passcode-input {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 20px;
-  border-radius: 7.5px;
+  padding: 1.25rem;
+  /* 20px / 16 */
+  border-radius: 0.46875rem;
+  /* 7.5px / 16 */
   background-color: white;
-  gap: 10px;
+  gap: 0.625rem;
+  /* 10px / 16 */
   font-weight: 700;
-  width: 200px;
+  width: 12.5rem;
+  /* 200px / 16 */
   white-space: nowrap;
 }
 
 .passcode-input div {
   flex-grow: 1;
-  /* Teks akan mengambil sisa ruang */
-  min-width: 100px;
-  /* Lebar minimal untuk teks */
-  font-size: 16px;
-  /* Ukuran font */
+  min-width: 6.25rem;
+  /* 100px / 16 */
+  font-size: 1rem;
+  /* 16px / 16 */
   text-align: center;
-  /* Pusatkan teks */
 }
 
 .passcode-input svg {
@@ -87,13 +85,17 @@ body {
 .keypad {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 20px;
-  margin-top: 20px;
+  grid-gap: 1.25rem;
+  /* 20px / 16 */
+  margin-top: 1.25rem;
+  /* 20px / 16 */
 }
 
 .key {
-  width: 50px;
-  height: 50px;
+  width: 3.125rem;
+  /* 50px / 16 */
+  height: 3.125rem;
+  /* 50px / 16 */
   border-radius: 20%;
   background-color: white;
   font-size: 1.5rem;
@@ -117,8 +119,10 @@ body {
   width: 100%;
   color: white;
   width: 50%;
-  margin-top: 20px;
-  font-size: 12px;
+  margin-top: 1.25rem;
+  /* 20px / 16 */
+  font-size: 0.75rem;
+  /* 12px / 16 */
   font-style: italic;
   text-align: center;
 }
@@ -134,34 +138,41 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  padding: 10px;
-  gap: 10px;
+  padding: 0.625rem;
+  /* 10px / 16 */
+  gap: 0.625rem;
+  /* 10px / 16 */
   z-index: 999;
-  box-sizing: border-box;
 }
 
 header {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 20px;
+  gap: 1.25rem;
+  /* 20px / 16 */
   background-color: rgba(255, 212, 212, 0.9);
-  border-radius: 7.5px;
+  border-radius: 0.46875rem;
+  /* 7.5px / 16 */
   width: 100%;
-  padding: 20px;
+  padding: 1.25rem;
+  /* 20px / 16 */
   color: #ff627c;
   position: relative;
 }
 
 header .love-1 {
   position: absolute;
-  top: -24px;
-  left: -8px;
+  top: -1.5rem;
+  /* -24px / 16 */
+  left: -0.5rem;
+  /* -8px / 16 */
   color: #ff6a85;
 }
 
 header img {
-  width: 60px;
+  width: 3.75rem;
+  /* 60px / 16 */
   border-radius: 50%;
   object-fit: cover;
 }
@@ -170,11 +181,13 @@ header img {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  font-size: 20px;
+  font-size: 1.25rem;
+  /* 20px / 16 */
 }
 
 .love-header p {
-  font-size: 12px;
+  font-size: 0.75rem;
+  /* 12px / 16 */
   color: rgb(255, 103, 128);
 }
 
@@ -185,13 +198,16 @@ header img {
   align-items: center;
   justify-content: center;
   background-color: rgba(255, 212, 212, 0.8);
-  border-radius: 7.5px;
-  padding: 20px;
+  border-radius: 0.46875rem;
+  /* 7.5px / 16 */
+  padding: 1.25rem;
+  /* 20px / 16 */
 }
 
 .love-timer h3 {
   color: rgb(255, 103, 128);
-  margin-bottom: 5px;
+  margin-bottom: 0.3125rem;
+  /* 5px / 16 */
 }
 
 .timer {
@@ -202,7 +218,8 @@ header img {
 }
 
 .time-unit {
-  margin: 0 10px 20px;
+  margin: 0 0.625rem 1.25rem;
+  /* 10px / 16, 20px / 16 */
   text-align: center;
 }
 
@@ -210,7 +227,8 @@ header img {
   font-size: 2rem;
   font-weight: bold;
   color: #ff8a9d;
-  text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.5);
+  text-shadow: 0.125rem 0.125rem 0.25rem rgba(255, 255, 255, 0.5);
+  /* 2px / 16, 2px / 16, 4px / 16 */
 }
 
 .time-label {
@@ -220,7 +238,8 @@ header img {
 }
 
 .love-letter-container {
-  margin-top: 10px;
+  margin-top: 0.625rem;
+  /* 10px / 16 */
 }
 
 .love-letter,
@@ -229,17 +248,21 @@ header img {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 5px;
-  padding: 8px 16px;
+  gap: 0.3125rem;
+  /* 5px / 16 */
+  padding: 0.5rem 1rem;
+  /* 8px / 16, 16px / 16 */
   border-style: none;
-  border-radius: 20px;
+  border-radius: 1.25rem;
+  /* 20px / 16 */
   color: white;
   background: linear-gradient(25deg, #ff8286, #ffd2c6);
   font-weight: 500;
 }
 
 .love-letter {
-  padding: 8px 48px;
+  padding: 0.5rem 3rem;
+  /* 8px / 16, 48px / 16 */
 }
 
 .love-letter:hover,
@@ -259,25 +282,22 @@ header img {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-top: 20px;
-  gap: 10px;
+  margin-top: 1.25rem;
+  /* 20px / 16 */
+  gap: 0.625rem;
+  /* 10px / 16 */
   position: relative;
-  ;
 }
 
 .timer::before {
   content: "";
-  /* Konten kosong */
   display: block;
   width: 100%;
-  /* Panjang garis */
-  height: 3px;
-  /* Ketebalan garis */
+  height: 0.1875rem;
+  /* 3px / 16 */
   background-color: #ff8a9d;
-  /* Warna garis */
   position: absolute;
   bottom: 5%;
-  /* Posisi garis di atas teks */
   left: 0;
 }
 
@@ -290,22 +310,26 @@ header img {
   position: absolute;
   z-index: 101;
   background-color: rgba(230, 230, 250, 0.628);
-  box-sizing: border-box;
 }
 
 .love-letter-bg {
-  padding: 20px;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  padding: 1.25rem;
+  /* 20px / 16 */
+  margin-top: 1.25rem;
+  /* 20px / 16 */
+  margin-bottom: 1.25rem;
+  /* 20px / 16 */
   background-color: rgba(255, 212, 212, 0.8);
   width: 90%;
   position: relative;
-  border-radius: 5px;
+  border-radius: 0.3125rem;
+  /* 5px / 16 */
   color: #ff627c;
 }
 
 .love-letter-bg p {
-  margin-top: 10px;
+  margin-top: 0.625rem;
+  /* 10px / 16 */
 }
 
 .loml {
@@ -320,26 +344,29 @@ header img {
   display: flex;
   justify-content: end;
   font-weight: 500;
-  margin-bottom: 40px;
+  margin-bottom: 2.5rem;
+  /* 40px / 16 */
   position: relative;
 }
 
 .ttd svg {
   position: absolute;
-  bottom: 30px;
-  right: 0
+  bottom: 1.875rem;
+  /* 30px / 16 */
+  right: 0;
 }
 
 .exit-btn {
   position: absolute;
-  top: 10px;
-  right: 10px;
+  top: 0.625rem;
+  /* 10px / 16 */
+  right: 0.625rem;
+  /* 10px / 16 */
   cursor: pointer;
 }
 
 #flor-display {
   display: none;
-  box-sizing: border-box;
 }
 
 .flor-container {
@@ -347,7 +374,8 @@ header img {
   height: 100vh;
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 1.25rem;
+  /* 20px / 16 */
   justify-content: center;
   align-items: center;
   position: absolute;
@@ -358,8 +386,10 @@ header img {
 
 .flor-container .exit-btn,
 .music-container .exit-btn {
-  top: 20px;
-  right: 20px;
+  top: 1.25rem;
+  /* 20px / 16 */
+  right: 1.25rem;
+  /* 20px / 16 */
 }
 
 .flor-container h2 {
@@ -374,7 +404,6 @@ header img {
 
 #music-display {
   display: none;
-  box-sizing: border-box;
 }
 
 .music-container {
@@ -382,30 +411,37 @@ header img {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 1.25rem;
+  /* 20px / 16 */
   justify-content: center;
   align-items: center;
   position: absolute;
   z-index: 100;
   background-color: rgba(230, 230, 250, 0.797);
-  padding: 20px;
+  padding: 1.25rem;
+  /* 20px / 16 */
 }
 
 .music-container>h2 {
   position: absolute;
-  top: 20px;
-  left: 20px;
+  top: 1.25rem;
+  /* 20px / 16 */
+  left: 1.25rem;
+  /* 20px / 16 */
   font-size: 1.4rem;
   width: 70%;
 }
 
 .musics {
   width: 100%;
-  margin-top: 100px;
-  margin-bottom: 40px;
+  margin-top: 6.25rem;
+  /* 100px / 16 */
+  margin-bottom: 2.5rem;
+  /* 40px / 16 */
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 1.25rem;
+  /* 20px / 16 */
   align-items: center;
 }
 
@@ -414,13 +450,18 @@ header img {
   align-items: center;
   justify-content: center;
   background-color: #ffffff42;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 0.625rem;
+  /* 10px / 16 */
+  box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.2);
+  /* 4px / 16, 8px / 16 */
   overflow: hidden;
-  width: 300px;
+  width: 18.75rem;
+  /* 300px / 16 */
   text-align: center;
-  padding: 10px;
-  gap: 15px;
+  padding: 0.625rem;
+  /* 10px / 16 */
+  gap: 0.9375rem;
+  /* 15px / 16 */
 }
 
 .album-container {
@@ -430,8 +471,10 @@ header img {
 }
 
 .album-cover {
-  width: 80px;
-  border-radius: 10px;
+  width: 5rem;
+  /* 80px / 16 */
+  border-radius: 0.625rem;
+  /* 10px / 16 */
 }
 
 .music-info {
@@ -457,8 +500,10 @@ header img {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-top: 10px;
-  gap: 10px;
+  margin-top: 0.625rem;
+  /* 10px / 16 */
+  gap: 0.625rem;
+  /* 10px / 16 */
 }
 
 .custom-audio-player button {
@@ -466,8 +511,10 @@ header img {
   color: white;
   border: none;
   border-radius: 50%;
-  width: 35px;
-  height: 35px;
+  width: 2.1875rem;
+  /* 35px / 16 */
+  height: 2.1875rem;
+  /* 35px / 16 */
   cursor: pointer;
   display: flex;
   align-items: center;
@@ -476,7 +523,6 @@ header img {
 
 .seek-bar {
   accent-color: pink;
-  /* Ganti warna sesuai keinginan */
 }
 
 #music-display a {
