@@ -50,6 +50,7 @@ body {
   background-color: rgb(255, 179, 192);
   transform: translate(-50%, -50%);
   z-index: 1000;
+  overflow: hidden;
 }
 
 .passcode-input {
@@ -143,6 +144,7 @@ body {
   gap: 0.625rem;
   /* 10px / 16 */
   z-index: 999;
+  overflow: hidden;
 }
 
 header {
@@ -314,6 +316,7 @@ header img {
   position: absolute;
   z-index: 101;
   background-color: rgba(230, 230, 250, 0.628);
+  overflow: hidden;
 }
 
 .love-letter-bg {
@@ -371,6 +374,7 @@ header img {
 
 #flor-display {
   display: none;
+  overflow: hidden;
 }
 
 .flor-container {
@@ -385,7 +389,6 @@ header img {
   position: absolute;
   z-index: 100;
   background-color: rgba(230, 230, 250, 0.797);
-  overflow: hidden;
 }
 
 .flor-container .exit-btn,
@@ -408,6 +411,7 @@ header img {
 
 #music-display {
   display: none;
+  overflow: hidden;
 }
 
 .music-container {
