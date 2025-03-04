@@ -53,6 +53,7 @@ body {
   background-color: rgb(255, 179, 192);
   transform: translate(-50%, -50%);
   z-index: 1000;
+  box-sizing: border-box;
 }
 
 .passcode-input {
