@@ -260,6 +260,10 @@ header img {
   font-weight: 500;
 }
 
+.playlist-btn {
+  padding: 0.5rem 3rem;
+}
+
 .love-letter {
   padding: 0.5rem 3rem;
   /* 8px / 16, 48px / 16 */
@@ -462,6 +466,14 @@ header img {
   /* 10px / 16 */
   gap: 0.9375rem;
   /* 15px / 16 */
+}
+
+.music-card:hover {
+  transform: scale(1.1);
+}
+
+.music-card:active {
+  background-color: #ffffffa9;
 }
 
 .album-container {
