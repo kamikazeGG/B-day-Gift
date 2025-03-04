@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Love</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="img/pixelarticons--heart.png"
+    />
+  </head>
+
+  <body>
+    <div id="passcode">
+      <div class="passcode-input">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+        >
+          <path
+            fill="currentColor"
+            d="M6 22q-.825 0-1.412-.587T4 20V10q0-.825.588-1.412T6 8h1V6q0-2.075 1.463-3.537T12 1t3.538 1.463T17 6v2h1q.825 0 1.413.588T20 10v10q0 .825-.587 1.413T18 22zm6-5q.825 0 1.413-.587T14 15t-.587-1.412T12 13t-1.412.588T10 15t.588 1.413T12 17M9 8h6V6q0-1.25-.875-2.125T12 3t-2.125.875T9 6z"
+          />
+        </svg>
+        <div>Enter Passcode</div>
+      </div>
+      <div class="keypad">
+        <div class="key" onclick="enterPasscode(1)">1</div>
+        <div class="key" onclick="enterPasscode(2)">2</div>
+        <div class="key" onclick="enterPasscode(3)">3</div>
+        <div class="key" onclick="enterPasscode(4)">4</div>
+        <div class="key" onclick="enterPasscode(5)">5</div>
+        <div class="key" onclick="enterPasscode(6)">6</div>
+        <div class="key" onclick="enterPasscode(7)">7</div>
+        <div class="key" onclick="enterPasscode(8)">8</div>
+        <div class="key" onclick="enterPasscode(9)">9</div>
+        <div class="key" onclick="clearPasscode()">C</div>
+        <div class="key" onclick="enterPasscode(0)">0</div>
+        <div class="key" onclick="submitPasscode()">→</div>
+      </div>
+      <p class="clue">
+        Clue: The day and month of the prettiest girl in the world
+      </p>
+    </div>
+
+    <div id="love">
+      <header>
+        <svg
+          class="love-1"
+          xmlns="http://www.w3.org/2000/svg"
+          width="60"
+          height="60"
+          viewBox="0 0 24 24"
+        >
+          <g fill="none">
+            <path
+              d="m12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036q-.016-.004-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427q-.004-.016-.016-.018m.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092q.019.005.029-.008l.004-.014l-.034-.614q-.005-.019-.02-.022m-.715.002a.02.02 0 0 0-.027.006l-.006.014l-.034.614q.001.018.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01z"
+            />
+            <path
+              fill="currentColor"
+              d="M9.498 5.793c1.42-1.904 3.555-2.46 5.519-1.925c2.12.577 3.984 2.398 4.603 4.934q.048.195.083.39a4.45 4.45 0 0 0-2.774-.07c-1.287-.952-2.881-1.112-4.298-.59c-1.775.655-3.161 2.316-3.482 4.406c-.41 2.676 1.22 5.08 3.525 7.124l.388.336c-.313.022-.631-.027-.935-.092a10 10 0 0 1-.466-.112l-.537-.15C6.35 18.701 3.154 16.6 2.237 13.46c-.732-2.506-.028-5.015 1.52-6.575c1.434-1.445 3.56-2.031 5.741-1.092m1.628 7.448c.428-2.792 3.657-4.168 5.315-1.772a.104.104 0 0 0 .144.025c2.377-1.684 4.94.713 4.387 3.483q-.48 2.41-4.47 4l-.435.17l-.263.108c-.227.089-.467.16-.684.122c-.216-.038-.417-.188-.6-.348l-.31-.28q-3.47-2.986-3.084-5.508"
+            />
+          </g>
+        </svg>
+        <img src="img/us.jpg" alt="us" />
+        <div class="love-header">
+          <h3>Happy Birthday My Sweetheart!</h3>
+          <p>ʚ♡ɞʚ♡ɞʚ♡ɞʚ♡ɞʚ♡ɞʚ♡ɞʚ♡ɞʚ♡ɞʚ♡ɞʚ♡ɞ</p>
+        </div>
+      </header>
+      <div class="love-timer">
+        <h3>The moment destiny united our paths for...</h3>
+        <div class="timer">
+          <div class="time-unit">
+            <div class="time-number" id="days">0</div>
+            <div class="time-label">Days</div>
+          </div>
+          <div class="time-unit">
+            <div class="time-number" id="hours">0</div>
+            <div class="time-label">Hours</div>
+          </div>
+          <div class="time-unit">
+            <div class="time-number" id="minutes">0</div>
+            <div class="time-label">Minutes</div>
+          </div>
+          <div class="time-unit">
+            <div class="time-number" id="seconds">0</div>
+            <div class="time-label">Second</div>
+          </div>
+        </div>
+        <div class="love-letter-container">
+          <button class="love-letter" onclick="displayLoveLetter()">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 72 72"
+            >
+              <path
+                fill="#fff"
+                d="M65.086 55.5H6.878A2.877 2.877 0 0 1 4 52.623V17.248A2.25 2.25 0 0 1 6.248 15h59.446A2.306 2.306 0 0 1 68 17.306v35.28a2.914 2.914 0 0 1-2.914 2.914"
+              />
+              <path
+                fill="#ea5a47"
+                d="M47.064 33.552A5.885 5.885 0 0 0 36 30.755a5.885 5.885 0 0 0-11.064 2.797c0 1.398.49 2.68 1.304 3.69l-.002.002L36 49.342l9.762-12.098l-.003-.002a5.86 5.86 0 0 0 1.305-3.69"
+              />
+              <g
+                fill="none"
+                stroke="#000"
+                stroke-miterlimit="10"
+                stroke-width="2"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M65.086 55.5H6.878A2.877 2.877 0 0 1 4 52.623V17.248A2.25 2.25 0 0 1 6.248 15h59.446A2.306 2.306 0 0 1 68 17.306v35.28a2.914 2.914 0 0 1-2.914 2.914"
+                />
+                <path stroke-linecap="round" d="m5 16l15 16m47-16L52 32" />
+                <path
+                  stroke-linejoin="round"
+                  d="M47.064 33.552A5.885 5.885 0 0 0 36 30.755a5.885 5.885 0 0 0-11.064 2.797c0 1.398.49 2.68 1.304 3.69l-.002.002L36 49.342l9.762-12.098l-.003-.002a5.86 5.86 0 0 0 1.305-3.69z"
+                />
+              </g>
+            </svg>
+            Please Click Me
+          </button>
+        </div>
+
+        <div class="btn-container">
+          <button onclick="displayFlor()">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+            >
+              <path
+                fill="currentColor"
+                d="M3 13a9 9 0 0 0 9 9c0-5-4.03-9-9-9m9-7.5A2.5 2.5 0 0 1 14.5 8a2.5 2.5 0 0 1-2.5 2.5A2.5 2.5 0 0 1 9.5 8A2.5 2.5 0 0 1 12 5.5m-6.4 4.75a2.5 2.5 0 0 0 2.5 2.5c.53 0 1.02-.17 1.4-.44v.19A2.5 2.5 0 0 0 12 15a2.5 2.5 0 0 0 2.5-2.5v-.19c.38.27.87.44 1.4.44a2.5 2.5 0 0 0 2.5-2.5c0-1-.59-1.85-1.43-2.25c.84-.4 1.43-1.26 1.43-2.25a2.5 2.5 0 0 0-2.5-2.5c-.53 0-1.02.16-1.4.44V3.5A2.5 2.5 0 0 0 12 1a2.5 2.5 0 0 0-2.5 2.5v.19c-.38-.28-.87-.44-1.4-.44a2.5 2.5 0 0 0-2.5 2.5c0 .99.59 1.85 1.43 2.25c-.84.4-1.43 1.25-1.43 2.25M12 22a9 9 0 0 0 9-9c-5 0-9 4-9 9"
+              />
+            </svg>
+            Flor
+          </button>
+          <button onclick="displayMusic()">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+            >
+              <path
+                fill="currentColor"
+                d="M12 13.535V3h8v3h-6v11a4 4 0 1 1-2-3.465"
+              />
+            </svg>
+            Also check this
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div id="love-letter-display">
+      <div class="love-letter-bg">
+        <h3>Haloo, Ran</h3>
+        <svg
+          class="exit-btn"
+          onclick="exitDisplay()"
+          xmlns="http://www.w3.org/2000/svg"
+          width="30"
+          height="30"
+          viewBox="0 0 24 24"
+        >
+          <path
+            fill="currentColor"
+            d="M3 16.74L7.76 12L3 7.26L7.26 3L12 7.76L16.74 3L21 7.26L16.24 12L21 16.74L16.74 21L12 16.24L7.26 21zm9-3.33l4.74 4.75l1.42-1.42L13.41 12l4.75-4.74l-1.42-1.42L12 10.59L7.26 5.84L5.84 7.26L10.59 12l-4.75 4.74l1.42 1.42z"
+          />
+        </svg>
+        <p>
+          Selamat ulang tahun yang ke 20 sayang!!, semoga kebahagiaan selalu
+          menemani langkahmu, semoga selalu diberikan kesehatan dan dipermudah
+          jalan rezeki nya, btw semoga kamu suka sama projek kecil kecilan
+          dariku hehe, maaf seadanya dulu, ntar kalo dah jago bakal kubuatin
+          yang lebih bagus 😛, sedikit throwback entah kamu sadar atau enggak,
+          tapi pertemuan kita berawal dari video iseng yang kubuat pas di hari
+          ultahku 3 tahun lalu, 17 November 2021, and from that point you
+          managed to reach me, it's almost like your present to my life was my
+          birthday gift lmao, can't say this enough but i will forever will be
+          thankful about it, thanks for finding me, thanks for the chance,
+          thanks for becoming someone i could love, basicaly thanks about
+          everything, since the moment we met, i couldn't felt more alive, it's
+          like finding my whole purpose, you genuinely made me want to become a
+          better person, you're the main part of my books and i want to write it
+          with our memories together and i want to make it sooo soooo looong, so
+          long so it will never end, anyway this is your day so i hope you could
+          enjoy this day to the fullest, i'm hoping for your happiness everyday
+          but for this day i hope you're the happiest you could ever be.
+          Remember that you're my favorite person ever!!, everything about you
+          is my favorite things, your pretty face, your cheeky smile, your silly
+          laugh, your whole existence, and last but not least, you're Love Of My
+          Life!, i promise someday will be the day it happens
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="18"
+            height="18"
+            viewBox="0 0 48 48"
+          >
+            <g fill="none">
+              <path
+                fill="url(#fluentColorHeart480)"
+                d="M21.263 10.178a10.77 10.77 0 0 0-12.575-.296c-5.65 3.866-6.308 11.953-1.357 16.681l15.806 15.092a1.25 1.25 0 0 0 1.726 0l15.803-15.091c4.952-4.728 4.293-12.816-1.358-16.681a10.77 10.77 0 0 0-12.577.298L24 12.246z"
+              />
+              <defs>
+                <linearGradient
+                  id="fluentColorHeart480"
+                  x1="-4.752"
+                  x2="15.69"
+                  y1="-1.713"
+                  y2="42.43"
+                  gradientUnits="userSpaceOnUse"
+                >
+                  <stop stop-color="#f97dbd" />
+                  <stop offset="1" stop-color="#d7257d" />
+                </linearGradient>
+              </defs>
+            </g>
+          </svg>
+          , <br />
+          <br />
+          <span class="loml">I Love You, <br />Fitria Salma Feranita</span>
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <span class="ttd"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="60"
+              height="60"
+              viewBox="0 0 32 32"
+            >
+              <g fill="#e27676">
+                <path
+                  d="M26.728 6.036a.45.45 0 0 0-.503.099L21.39 11H10.753l-4.96-4.863a.47.47 0 0 0-.517-.1A.4.4 0 0 0 5 6.43v.363l3.146 3.146a1.5 1.5 0 0 1 0 2.122L5 15.207v4.866l-1.83-.915a2 2 0 0 0-.17-.072V6.43c0-2.26 2.723-3.185 4.203-1.711L11.57 9h8.988l4.248-4.275C26.288 3.234 29 4.178 29 6.43v13.66a3.5 3.5 0 0 0-.695.05c-.142-.405-.387-.895-.816-1.265a4 4 0 0 0-.489-.364v-3.305l-3.146-3.146a1.5 1.5 0 0 1 0-2.122L27 6.793V6.43a.4.4 0 0 0-.272-.394m-2.167 5.318L27 13.793V8.207l-2.44 2.44a.5.5 0 0 0 0 .707M5 13.793l2.44-2.44a.5.5 0 0 0 0-.707L5 8.208zm21.348 14.008c-.548.73-1.38 1.199-2.266 1.199H7.918c-1.276 0-2.405-.888-2.783-2.14l-1.804.901C4.041 29.64 5.814 31 7.918 31h16.164c2.32 0 4.204-1.713 4.755-3.867c-.674.27-1.357.447-1.946.568q-.28.057-.543.1M3 24.573l2-1v-.146l-2-1z"
+                />
+                <path
+                  d="M17.043 19h-2.086a.5.5 0 0 0-.353.854l1.042 1.042a.5.5 0 0 0 .708 0l1.042-1.042a.5.5 0 0 0-.353-.854M15 22.5a.5.5 0 0 1 .5-.5c.446 0 .926.163 1.3.444c.378.283.7.73.7 1.306c0 .54-.282.965-.628 1.25c.346.285.628.71.628 1.25c0 .576-.322 1.023-.7 1.306a2.23 2.23 0 0 1-1.3.444a.5.5 0 0 1 0-1c.22 0 .491-.087.7-.244c.206-.154.3-.332.3-.506s-.094-.352-.3-.506a1.23 1.23 0 0 0-.7-.244a.5.5 0 0 1 0-1c.22 0 .491-.087.7-.244c.206-.154.3-.332.3-.506s-.094-.352-.3-.506a1.23 1.23 0 0 0-.7-.244a.5.5 0 0 1-.5-.5m-4-4c0-.17.055-.436.206-.645c.132-.184.357-.355.794-.355s.662.17.794.355c.15.209.206.475.206.645a.5.5 0 0 0 1 0c0-.33-.095-.814-.394-1.23c-.318-.44-.843-.77-1.606-.77s-1.288.33-1.606.77c-.3.416-.394.9-.394 1.23a.5.5 0 0 0 1 0m8 0c0-.17.055-.436.206-.645c.132-.184.357-.355.794-.355s.662.17.794.355c.15.209.206.475.206.645a.5.5 0 0 0 1 0c0-.33-.095-.814-.394-1.23c-.318-.44-.843-.77-1.606-.77s-1.288.33-1.606.77c-.3.416-.394.9-.394 1.23a.5.5 0 0 0 1 0M2.724 20.053a.5.5 0 1 0-.448.894l4 2a.5.5 0 1 0 .448-.894zm0 6.894a.5.5 0 1 1-.448-.894l4-2a.5.5 0 1 1 .448.894zm24.834-5.521s1.066-.547 1.882-.247c2.008.752 1.83 2.836.848 3.877C28.52 26.903 24.42 27 24.42 27s-1.956-3.694-1.277-6.186c.388-1.407 2.061-2.588 3.693-1.181c.659.57.722 1.793.722 1.793"
+                />
+              </g>
+            </svg>
+            E. P.</span
+          >
+        </p>
+      </div>
+    </div>
+
+    <div id="flor-display">
+      <div class="flor-container">
+        <h2>You're my favorite flor ♡</h2>
+        <svg
+          class="exit-btn"
+          onclick="exitDisplay()"
+          xmlns="http://www.w3.org/2000/svg"
+          width="30"
+          height="30"
+          viewBox="0 0 24 24"
+        >
+          <path
+            fill="currentColor"
+            d="M3 16.74L7.76 12L3 7.26L7.26 3L12 7.76L16.74 3L21 7.26L16.24 12L21 16.74L16.74 21L12 16.24L7.26 21zm9-3.33l4.74 4.75l1.42-1.42L13.41 12l4.75-4.74l-1.42-1.42L12 10.59L7.26 5.84L5.84 7.26L10.59 12l-4.75 4.74l1.42 1.42z"
+          />
+        </svg>
+        <img src="img/flor.png" alt="flor" />
+      </div>
+    </div>
+
+    <div id="music-display">
+      <div class="music-container">
+        <h2>Songs that remind me about you ♡</h2>
+        <svg
+          class="exit-btn"
+          onclick="exitDisplay()"
+          xmlns="http://www.w3.org/2000/svg"
+          width="30"
+          height="30"
+          viewBox="0 0 24 24"
+        >
+          <path
+            fill="currentColor"
+            d="M3 16.74L7.76 12L3 7.26L7.26 3L12 7.76L16.74 3L21 7.26L16.24 12L21 16.74L16.74 21L12 16.24L7.26 21zm9-3.33l4.74 4.75l1.42-1.42L13.41 12l4.75-4.74l-1.42-1.42L12 10.59L7.26 5.84L5.84 7.26L10.59 12l-4.75 4.74l1.42 1.42z"
+          />
+        </svg>
+        <div class="musics">
+          <div class="music-card">
+            <div class="album-container">
+              <img src="img/sau.jpeg" alt="Album Cover" class="album-cover" />
+            </div>
+            <div class="music-info">
+              <h2>Something About You</h2>
+              <p>Eyedress</p>
+              <div class="custom-audio-player">
+                <button class="play-pause-btn">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="22"
+                    height="22"
+                    viewBox="0 0 24 24"
+                  >
+                    <path fill="currentColor" d="M8 5.14v14l11-7z" />
+                  </svg>
+                </button>
+                <input type="range" class="seek-bar" value="0" max="100" />
+              </div>
+              <audio
+                class="audio"
+                src="audio/eyedress-she-looks-just-like-a-dream-something-about-you-lyrics-ft-dent-m_qz7YoC54.mp3"
+              ></audio>
+            </div>
+          </div>
+
+          <!-- Tambahkan card album lainnya di sini -->
+          <div class="music-card">
+            <div class="album-container">
+              <img src="img/looh.jpeg" alt="Album Cover" class="album-cover" />
+            </div>
+            <div class="music-info">
+              <h2>Locked Out Of Heaven</h2>
+              <p>Bruno Mars</p>
+              <div class="custom-audio-player">
+                <button class="play-pause-btn">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="22"
+                    height="22"
+                    viewBox="0 0 24 24"
+                  >
+                    <path fill="currentColor" d="M8 5.14v14l11-7z" />
+                  </svg>
+                </button>
+                <input type="range" class="seek-bar" value="0" max="100" />
+              </div>
+              <audio
+                class="audio"
+                src="audio/bruno-mars-locked-out-of-heaven_iEIwKRKO.mp3"
+              ></audio>
+            </div>
+          </div>
+
+          <div class="music-card">
+            <div class="album-container">
+              <img src="img/ssong.jpeg" alt="Album Cover" class="album-cover" />
+            </div>
+            <div class="music-info">
+              <h2>Sailor Song</h2>
+              <p>Gigi Perez</p>
+              <div class="custom-audio-player">
+                <button class="play-pause-btn">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="22"
+                    height="22"
+                    viewBox="0 0 24 24"
+                  >
+                    <path fill="currentColor" d="M8 5.14v14l11-7z" />
+                  </svg>
+                </button>
+                <input type="range" class="seek-bar" value="0" max="100" />
+              </div>
+              <audio
+                class="audio"
+                src="audio/gigi-perez-sailor-song-lyrics_ZJ4MYcGG.mp3"
+              ></audio>
+            </div>
+          </div>
+
+          <div class="music-card">
+            <div class="album-container">
+              <img
+                src="img/sempurna.jpeg"
+                alt="Album Cover"
+                class="album-cover"
+              />
+            </div>
+            <div class="music-info">
+              <h2>Sempurna</h2>
+              <p>Andra and The Backbone</p>
+              <div class="custom-audio-player">
+                <button class="play-pause-btn">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="22"
+                    height="22"
+                    viewBox="0 0 24 24"
+                  >
+                    <path fill="currentColor" d="M8 5.14v14l11-7z" />
+                  </svg>
+                </button>
+                <input type="range" class="seek-bar" value="0" max="100" />
+              </div>
+              <audio
+                class="audio"
+                src="audio/andra-and-the-backbone-sempurna-lyrics_peRIaJMR.mp3"
+              ></audio>
+            </div>
+          </div>
+
+          <div class="music-card">
+            <div class="album-container">
+              <img src="img/lwah.jpeg" alt="Album Cover" class="album-cover" />
+            </div>
+            <div class="music-info">
+              <h2>Line Without A Hook</h2>
+              <p>Ricky Montgomery</p>
+              <div class="custom-audio-player">
+                <button class="play-pause-btn">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="22"
+                    height="22"
+                    viewBox="0 0 24 24"
+                  >
+                    <path fill="currentColor" d="M8 5.14v14l11-7z" />
+                  </svg>
+                </button>
+                <input type="range" class="seek-bar" value="0" max="100" />
+              </div>
+              <audio
+                class="audio"
+                src="audio/ricky-montgomery-line-without-a-hook-official-lyric-video_3x5zbWX5.mp3"
+              ></audio>
+            </div>
+          </div>
+
+          <div class="music-card">
+            <div class="album-container">
+              <img src="img/glue.jpeg" alt="Album Cover" class="album-cover" />
+            </div>
+            <div class="music-info">
+              <h2>Glue Song</h2>
+              <p>Beabadoobee</p>
+              <div class="custom-audio-player">
+                <button class="play-pause-btn">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="22"
+                    height="22"
+                    viewBox="0 0 24 24"
+                  >
+                    <path fill="currentColor" d="M8 5.14v14l11-7z" />
+                  </svg>
+                </button>
+                <input type="range" class="seek-bar" value="0" max="100" />
+              </div>
+              <audio
+                class="audio"
+                src="audio/beabadoobee-glue-song-lyrics_5Dec9c6e.mp3"
+              ></audio>
+            </div>
+          </div>
+
+          <div class="music-card">
+            <div class="album-container">
+              <img
+                src="img/separuhaku.jpeg"
+                alt="Album Cover"
+                class="album-cover"
+              />
+            </div>
+            <div class="music-info">
+              <h2>Separuh Aku</h2>
+              <p>NOAH</p>
+              <div class="custom-audio-player">
+                <button class="play-pause-btn">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="22"
+                    height="22"
+                    viewBox="0 0 24 24"
+                  >
+                    <path fill="currentColor" d="M8 5.14v14l11-7z" />
+                  </svg>
+                </button>
+                <input type="range" class="seek-bar" value="0" max="100" />
+              </div>
+              <audio
+                class="audio"
+                src="audio/noah-separuh-aku-official-audio_NZSJqQfd.mp3"
+              ></audio>
+            </div>
+          </div>
+          <a
+            href="https://open.spotify.com/playlist/1XotkjAaJs6u9nK7Wj5qut?si=tmogc5kdQveVhvgtPwji9A&pi=a-fTUI0maRQGG9"
+            target="_blank"
+          >
+            <button class="playlist-btn">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  fill="currentColor"
+                  d="M12 13.535V3h8v3h-6v11a4 4 0 1 1-2-3.465"
+                />
+              </svg>
+              Discover More
+            </button>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
