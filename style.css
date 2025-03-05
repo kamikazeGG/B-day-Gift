@@ -1,5 +1,4 @@
 * {
-  font-family: "Poppins", Arial, sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -11,6 +10,7 @@ body {
   color: #fe899c;
   overflow: hidden;
   background-color: #ffabb9;
+  font-family: "Poppins", Arial, sans-serif;
 }
 
 .heart {
@@ -317,6 +317,8 @@ header img {
   z-index: 101;
   background-color: rgba(230, 230, 250, 0.628);
   overflow: hidden;
+  text-align: justify;
+  font-family: 'Dancing Script', cursive;
 }
 
 .love-letter-bg {
@@ -334,14 +336,20 @@ header img {
   color: #ff627c;
 }
 
+.love-letter-bg h3 {
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
 .love-letter-bg p {
   margin-top: 0.625rem;
   /* 10px / 16 */
+  font-size: 1.2rem;
 }
 
 .loml {
   font-weight: 700;
-  font-size: 1.1rem;
+  font-size: 1.3rem;
   white-space: nowrap;
   font-style: italic;
 }
